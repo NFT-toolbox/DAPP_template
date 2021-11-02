@@ -1,0 +1,282 @@
+/* =============================================================================
+   HTML5 CSS Reset Minified - Eric Meyer
+   ========================================================================== */
+
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,abbr,address,cite,code,del,dfn,em,img,ins,kbd,q,samp,small,strong,sub,sup,var,b,i,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:transparent}
+body{line-height:1}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}
+nav ul{list-style:none}
+blockquote,q{quotes:none}
+blockquote:before,blockquote:after,q:before,q:after{content:none}
+a{margin:0;padding:0;font-size:100%;vertical-align:baseline;background:transparent;text-decoration:none}
+mark{background-color:#ff9;color:#000;font-style:italic;font-weight:bold}
+del{text-decoration:line-through}
+abbr[title],dfn[title]{border-bottom:1px dotted;cursor:help}
+table{border-collapse:collapse;border-spacing:0}
+hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}
+input,select{vertical-align:middle}
+li{list-style:none}
+
+
+/* =============================================================================
+   My CSS
+   ========================================================================== */
+
+/* ---- base ---- */
+
+html,body{ 
+	width:100%;
+	min-height: 100vh;
+	background:#0077ff;
+  display: flex;
+  flex-direction: column;
+}
+
+html{
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body{
+  font-family: "Roboto Mono",sans-serif;
+}
+
+canvas{
+  display:block;
+  vertical-align:bottom;
+}
+
+/* ---- stats.js ---- */
+
+.count-particles{
+  background: #000022;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: 80px;
+  color: #13E8E9;
+  font-size: .8em;
+  text-align: left;
+  text-indent: 4px;
+  line-height: 14px;
+  padding-bottom: 2px;
+  font-family: "BubbleBobble", "Roboto Mono",sans-serif;
+  font-weight: bold;
+}
+
+.js-count-particles{
+  font-size: 1.1em;
+}
+
+#stats,
+.count-particles{
+  -webkit-user-select: none;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+#stats{
+  border-radius: 3px 3px 0 0;
+  overflow: hidden;
+}
+
+.count-particles{
+  border-radius: 0 0 3px 3px;
+}
+
+
+/* ---- particles.js container ---- */
+
+#particles-js{
+  width: 100%;
+  height: 100vh;
+  background-color:linear-gradient(#77C4BC, #0077ff);
+  background-image: url('../img/front-title.png');
+  background-size: contain;
+  background-position: 50% 70%;
+  background-repeat: no-repeat;
+
+}
+
+
+#story{
+  width: 100%;
+  height: 100vh;
+  /*background-color: #77C4BC;*/
+  background-image: linear-gradient(#0077ff, #0070aa);
+  background-size: contain;
+  background-position: 50% 70%;
+  background-repeat: no-repeat;
+
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+
+  display: flex;
+  flex-direction: column;
+}
+#roadmap{
+  width: 100%;
+  height: 100vh;
+  background-color: linear-gradient(#00C4BC, #0077ff);
+  background-image: linear-gradient(#0070aa, #0060aa);
+  background-size: contain;
+  background-position: 50% 70%;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+
+}
+
+#vert-social{
+  top: 50%;
+  width: 50px;
+  height: 150px;
+  position: fixed;
+  z-index: 1;
+  text-align: left;
+  left: 2px;
+  background-color: transparent;
+}
+
+#vert-social img{
+  background-color:lightblue; 
+  height:50px; 
+  border-radius:5px; 
+  box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.25);
+}
+#connection {
+  width: 300px; 
+  margin: auto; 
+  position: absolute; 
+  left: 90%; 
+  top: 10%; 
+  transform: translate(-50%, -50%);
+}
+@font-face { 
+    font-family: 'BubbleBobble';  
+    src: url('../fonts/BubbleBobble.ttf') format('truetype'); 
+}
+/*@font-face { 
+    font-family: 'Caviar Dreams';  
+    src: url('CaviarDreams.ttf') format('truetype'), 
+         url('CaviarDreams.woff') format('woff'),
+         url('CaviarDreams.woff2') format('woff2');
+}*/
+@font-face { 
+    font-family: 'lunaland';  
+    src: url('../fonts/lunaland.woff') format('woff');
+}
+
+h2{
+  margin-top: 20px;
+  margin-bottom: 24px;
+  font-family: "BubbleBobble","Roboto Mono",sans-serif;
+/*  color: #8a3bde;*/
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 144px;
+  margin-bottom: 20px;
+}
+h3{
+  margin-top: 20px;
+  margin-bottom: 24px;
+  font-family: "BubbleBobble", "Roboto Mono",sans-serif;
+/*  color: #8a3bde;*/
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 144px;
+  margin-bottom: 20px;
+}
+.data{
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+body p {
+    margin-bottom: 16px;
+      font-family: "lunaland", "Roboto Mono",sans-serif;
+}
+
+.spacer {
+    width: 100%;
+    height: 30px;
+}
+
+.centertext {
+    text-align: center;
+}
+.container {
+  display: flex;
+  flex: 0;
+  flex-direction: column;
+  justify-content: flex-start;
+
+  align-items: flex-start; 
+  background-color: none;
+  background-image: "none";
+  background-size: cover;
+  background-position: center;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+
+/* CSS - Button 74 style from https://getcssscan.com/css-buttons-examples*/
+.button-74 {
+  background-color: #fbeee0;
+  border: 2px solid #422800;
+  border-radius: 30px;
+  box-shadow: #422800 4px 4px 0 0;
+  color: #422800;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 0 18px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-74:hover {
+  background-color: #fff;
+}
+
+.button-74:active {
+  box-shadow: #422800 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+  .button-74 {
+    min-width: 120px;
+    padding: 0 25px;
+  }
+}
+
+
+/* CSS - Button 74 style from https://getcssscan.com/css-buttons-examples*/
+#minter-div {
+  display:  flex ;
+  width: 300px;
+  margin: auto; 
+  position: absolute; 
+  left: 50%; 
+  top: 90%;
+}
+
+#minter-div .button-74{
+  width: 300px;
+  margin: auto;
+  text-align: center;
+  transform: translate(-50%, -50%);
+}
