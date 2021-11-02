@@ -127,7 +127,7 @@
                 try {
                     const provider = new ethers.providers.Web3Provider(window.ethereum)
                     if (await getNetworkId() !== 80001){
-                        throw ({'message':"Please connect to Polygon Mainnet"});
+                        throw ({'message':"Please connect to Polygon Testnet"});
                     }
                     var SmartContractAddress = "0xc4f22988dC9f33b8EB13546023a96a8026763aBc";
                     //var SmartContractABI needs to be spacified in MaticPirates_mod.json
